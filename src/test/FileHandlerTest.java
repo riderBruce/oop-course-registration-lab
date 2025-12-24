@@ -22,7 +22,7 @@ public class FileHandlerTest {
         // Act + Assert
         assertThrows(
                 FileHandlerException.class,
-                () -> file.save(new RegistrationRecord("300427965", "CSIS3380", "2026Winter"))
+                () -> file.save(new RegistrationRecord("3001234757", "CSIS3380", "2026Winter"))
         );
     }
 
@@ -33,13 +33,13 @@ public class FileHandlerTest {
 
         FileHandler file = new FileHandler(tempFile.toString());
 
-        file.save(new RegistrationRecord("300427965", "CSIS3380", "2026Winter"));
+        file.save(new RegistrationRecord("3001234757", "CSIS3380", "2026Winter"));
         // file.save(new domain.RegistrationRecord("---", "course---", "2025---"));
 
         List<RegistrationRecord> records = file.loadRecords();
 
         assertEquals(1, records.size());
-        assertEquals("300427965", records.get(0).getStudentId());
-        assertEquals("300427965,CSIS3380,2026Winter", records.get(0).toString());
+        assertEquals("3001234567", records.get(0).getStudentId());
+        assertEquals("3001234757,CSIS3380,2026Winter", records.get(0).toString());
     }
 }
