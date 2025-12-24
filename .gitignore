@@ -1,0 +1,31 @@
+# ==== OS / Editor ====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+
+# ==== Java build artifacts ====
+*.class
+*.jar
+*.war
+*.ear
+
+
+# ==== Gradle ====
+.gradle/
+build/
+
+
+# ==== Maven ====
+target/
+
+
+# ==== Logs / temp ====
+*.log
+*.tmp
+
+
+# ==== Project runtime data ====
+registrations.txt
