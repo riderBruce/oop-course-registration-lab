@@ -56,7 +56,7 @@ Rules included:
 
 ---
 
-## 🗂️ Suggested project structure
+## 🗂️ project structure
 
 ```text
 src/
